@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--手机防盗 a_p_g 自定义什么-->
+    <style name="text_title_style">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#82B651</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <!--手机防盗 a_p_g 自定义什么-->
+    <style name="text_content_style">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#82B651</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <!--<item name="android:drawableLeft">@android:drawable/btn_star_big_on</item>-->
+
+    </style>
+
+    <!--button next-->
+    <style name="button_next_style">
+        <item name="android:onClick">next</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:text">下一步</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/button_selector"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:text="下一步"-->
+    <!--android:textSize="15sp"-->
+
+    <!--button previous-->
+    <style name="button_previous_style">
+        <item name="android:onClick">previous</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:text">上一步</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <!--自定义进度条样式-->
+    <style name="my_pb_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">
+            @drawable/progress_bar
+        </item>
+    </style>
+
+</resources>
+
+
+    <!--<item name="windowFullscreen">true</item>--><!--<item name="windowContentOverlay">@null</item>-->

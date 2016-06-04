@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="serverurl">
+        http://192.168.169.1:8080/updateinfo.html
+        <!--http://127.0.0.1:8080/updateinfo.html-->
+    </string>
+
+
+
+
+</resources>

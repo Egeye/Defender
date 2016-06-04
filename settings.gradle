@@ -1,0 +1,1 @@
+include ':app', ':app-gps', ':app-lock-screen', ':app-edit-text-delete', ':app-double-click', ':app-widget', 'app-desk-top'

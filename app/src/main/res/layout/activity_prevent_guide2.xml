@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:egeye="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#82B651"
+            android:gravity="center"
+            android:text="设置向导"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="guidexit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_back" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EBEBEB" />
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="SIM卡变更报警：" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="通过绑定SIM卡，下次重启手机如果发现SIM卡发生变化就会发送报警短信" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="12dp"
+        android:background="#82B651" />
+
+    <com.egeye.mobilesafe.ui.SettingsItemView
+
+        android:id="@+id/siv_bindsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        egeye:status_off="SIM卡还未绑定"
+        egeye:status_on="SIM卡已经绑定"
+        egeye:status_title="SIM卡绑定">
+
+    </com.egeye.mobilesafe.ui.SettingsItemView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_flag_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button style="@style/button_previous_style" />
+
+            <Button style="@style/button_next_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_flag_buttom"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="33dp"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_online" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_flag"
+            android:layout_centerInParent="true"
+            android:src="@drawable/guide_encrypt" />
+
+    </RelativeLayout>
+
+</LinearLayout>

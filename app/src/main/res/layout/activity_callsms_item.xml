@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/v_black_num"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/shape_round_green" />
+
+    <TextView
+        android:id="@+id/tv_black_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/v_black_num"
+        android:text="黑名单号码"
+        android:textColor="#82B651"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tv_black_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_black_num"
+        android:layout_below="@id/tv_black_num"
+        android:text="拦截模式"
+        android:textColor="#849C9C"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/delete_selector" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_delete"
+        android:src="@drawable/ic_menu_edit" />
+
+</RelativeLayout>

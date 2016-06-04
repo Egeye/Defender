@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Defender.iml" filepath="$PROJECT_DIR$/Defender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-desk-top/app-desk-top.iml" filepath="$PROJECT_DIR$/app-desk-top/app-desk-top.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-double-click/app-double-click.iml" filepath="$PROJECT_DIR$/app-double-click/app-double-click.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-edit-text-delete/app-edit-text-delete.iml" filepath="$PROJECT_DIR$/app-edit-text-delete/app-edit-text-delete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-gps/app-gps.iml" filepath="$PROJECT_DIR$/app-gps/app-gps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-lock-screen/app-lock-screen.iml" filepath="$PROJECT_DIR$/app-lock-screen/app-lock-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-widget/app-widget.iml" filepath="$PROJECT_DIR$/app-widget/app-widget.iml" />
+    </modules>
+  </component>
+</project>

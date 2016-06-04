@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<boolean name="update_status" value="true" />
+<boolean name="prevent_guide" value="true" />
+<boolean name="prevent_protect" value="true" />
+<string name="prevent_phone">5556</string>
+<string name="prevent_sim">89014103211118510720</string>
+<string name="prevent_password">c4ca4238a0b923820dcc509a6f75849b</string>
+</map>

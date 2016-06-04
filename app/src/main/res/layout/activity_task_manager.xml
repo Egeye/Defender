@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="#82B651"
+        android:gravity="center"
+        android:text="进程管理"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EBEBEB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_process_count"
+            style="@style/text_content_style"
+            android:layout_marginLeft="7dp"
+            android:text="运行中的进程："
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_mem_info"
+            style="@style/text_content_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:text="剩余/总内存："
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="10dp"
+        android:background="#82B651" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100">
+
+        <LinearLayout
+            android:id="@+id/ll_task_loding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true" />
+
+        <TextView
+            android:id="@+id/tv_task_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#82B651"
+            android:text="用户进程："
+            android:textColor="#fff" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="TaskSelectAll"
+            android:text="全选"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="TaskSelectRever"
+            android:text="反选"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="TaskClean"
+            android:text="清理"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="TaskSet"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

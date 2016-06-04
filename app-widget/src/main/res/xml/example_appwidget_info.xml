@@ -1,0 +1,19 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/process_widget"
+    android:minHeight="72.0dip"
+    android:minWidth="294.0dip"
+    android:updatePeriodMillis="86400000">
+
+
+    <!--android:minWidth="40dp"-->
+    <!--android:minHeight="40dp"-->
+    <!--android:updatePeriodMillis="86400000"-->
+    <!--android:previewImage="@drawable/preview" -->
+    <!--预览图片，不设置则默认使用应用图标-->
+
+    <!--android:initialLayout="@layout/example_appwidget"-->
+    <!--android:configure="com.example.android.ExampleAppWidgetConfigure"-->
+    <!--android:resizeMode="horizontal|vertical"-->
+    <!--android:widgetCategory="home_screen">-->
+
+</appwidget-provider>

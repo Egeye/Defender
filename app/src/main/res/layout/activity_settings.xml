@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:egeye="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="#82B651"
+        android:gravity="center"
+        android:text="设置中心"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EBEBEB" />
+
+    <com.egeye.mobilesafe.ui.SettingsItemView
+        android:id="@+id/si_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        egeye:status_off="自动更新已经关闭"
+        egeye:status_on="自动更新已经开启"
+        egeye:status_title="自动检测更新" />
+
+    <com.egeye.mobilesafe.ui.SettingsItemView
+        android:id="@+id/siv_smscall_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        egeye:status_off="黑名单拦截已经关闭"
+        egeye:status_on="黑名单拦截已经开启"
+        egeye:status_title="黑名单拦截" />
+
+    <com.egeye.mobilesafe.ui.SettingsItemView
+        android:id="@+id/siv_app_watchdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        egeye:status_off="软件管理锁已经关闭"
+        egeye:status_on="软件管理锁已经开启"
+        egeye:status_title="软件管理锁" />
+
+    <com.egeye.mobilesafe.ui.SettingsItemView
+        android:id="@+id/siv_incall_show_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        egeye:status_off="号码归属地显示已经关闭"
+        egeye:status_on="号码归属地显示已经开启"
+        egeye:status_title="号码归属地显示" />
+
+    <com.egeye.mobilesafe.ui.SettingsClickView
+        android:id="@+id/scv_theme_show_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        egeye:status_title="号码归属地提示框风格" />
+
+
+</LinearLayout>
